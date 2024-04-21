@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+label {
+  font-size: 1.2rem;
+}
+input {
+  display: block;
+  padding: 2rem;
+}
