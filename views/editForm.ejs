@@ -16,7 +16,7 @@
       <div class="flex justify-between bg-red-500 p-4 rounded">
         <div class="text-xl font-bold text-white">Events</div>
         <div>
-          <a href="/event"
+          <a href="/event/<%= info.id %>"
             ><button
               class="p-2 bg-gray-400 text-white rounded hover:bg-pink-100 hover:text-black"
             >
@@ -33,7 +33,7 @@
       <!-- form  -->
       <div class="basis-1/2 flex-grow-0 flex-shrink">
         <form
-          action="/event"
+          action="/event/<%= info.id %>"
           method="post"
           class="container mx-auto my-4 w-full"
         >
@@ -43,6 +43,7 @@
             id="title"
             name="title"
             placeholder="Enter title of event"
+            value="<%= info.title %>"
             class="p-2 outline-red-400 outline border-red-300 rounded my-2 w-3/4"
           />
           <label for="host">Host name:</label>
@@ -51,6 +52,7 @@
             id="host"
             name="host"
             placeholder="Enter host name"
+            value="<%= info.host %>"
             class="p-2 outline-red-400 outline border-red-300 rounded my-2 w-3/4"
           />
           <label for="summary">Summary:</label>
@@ -59,6 +61,7 @@
             id="summary"
             name="summary"
             placeholder="Enter summary"
+            value="<%= info.summary %>"
             class="p-2 outline-red-400 outline border-red-300 rounded my-2 w-3/4"
           />
           <label for="title">Start date:</label>
@@ -67,6 +70,7 @@
             id="start-date"
             name="start_date"
             placeholder="Enter start-date of event"
+            value="<%= info.start_date %>"
             class="p-2 outline-red-400 outline border-red-300 rounded my-2 w-3/4"
           />
           <label for="title">End date:</label>
@@ -75,6 +79,7 @@
             id="end-date"
             name="end_date"
             placeholder="Enter end-date of event"
+            value="<%= info.end_date %>"
             class="p-2 outline-red-400 outline border-red-300 rounded my-2 w-3/4"
           />
 
